@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "OrgGPT",
+  "version": "0.1.0",
+
+  "description": "Organizes ChatGPT prompts",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
+
